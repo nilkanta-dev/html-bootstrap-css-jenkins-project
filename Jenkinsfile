@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 
-                git url: 'https://github.com/nilkanta-dev/html-css-bootstrap-jenkins-project.git', 
+                git url: 'https://github.com/nilkanta-dev/html-bootstrap-css-jenkins-project.git', 
                 branch: 'master'
             }
         }
