@@ -10,10 +10,24 @@ pipeline {
             }
         }
 
-        stage('Optional: Optimize Images') {
+        stage('Install Dependencies') {
             steps {
                 
-                echo 'No image optimizations configured. Skipping.'
+                sh 'npm install'
+            }
+        }
+
+        stage('Lint & Format') {
+            steps {
+                sh 'npm run lint:html || true'
+                sh 'npm run lint:css || true'
+                sh 'npm run format'
+            }
+        }
+
+        stage('Build'){
+            steps {
+                sh 'npm run build'
             }
         }
 

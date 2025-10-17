@@ -1,0 +1,22 @@
+{
+  "name": "beyoundtravels",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "lint:html": "htmlhint .",
+    "lint:css": "stylelint '**/*.css'",
+    "format": "prettier --write .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node build.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "htmlhint": "^1.7.1",
+    "prettier": "^3.6.2",
+    "shelljs": "^0.10.0",
+    "stylelint": "^16.25.0"
+  }
+}
