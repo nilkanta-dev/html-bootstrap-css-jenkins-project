@@ -2,7 +2,7 @@
 
 This repository contains a simple **HTML, CSS, and Bootstrap** website used to **experiment with CI/CD automation** using **GitHub Actions** and **Jenkins**.
 
-The goal of this project is to understand how automated build and deployment pipelines work — from pushing code to auto-deploying a live site on **GitHub Pages** (and optionally via Jenkins).
+The goal of this project is to understand how automated build and deployment pipelines work — from pushing code to auto-deploying a live site on **GitHub Pages** and **Netlify**.
 
 
 
@@ -18,7 +18,7 @@ The goal of this project is to understand how automated build and deployment pip
 #### Features ####
 
 - Automated deployment to **GitHub Pages** using **GitHub Actions**
-- Optionally deployable through **Jenkins pipelines**
+- Deployment to **Netlify** through **Jenkins pipelines**
 - Lightweight and fully static (no frameworks or build tools required)
 - Easily customizable HTML/CSS structure
 
@@ -31,8 +31,9 @@ The goal of this project is to understand how automated build and deployment pip
 The workflow file is located at:  .github/workflows/deploy.yml
 
  **It performs the following steps**:
-- Checks out the repository  
-- (If needed) installs dependencies  
+- Checks out the repository
+- Sets up Node environment  
+- Installs dependencies  
 - Builds the project (for static projects, this is optional)  
 - Deploys to **GitHub Pages** via [`peaceiris/actions-gh-pages`](https://github.com/peaceiris/actions-gh-pages)
 
@@ -83,5 +84,5 @@ This project is open source under the MIT License
 
 #### Author ####
 
-**Nilkanta@33**
+**Nilkanta@33**<br>
 Full-Stack Python Developer
